@@ -20,7 +20,7 @@
 
         DPEAButton:  
             id: auto
-            color: 0.917, 0.796, 0.380, 1
+            color: 251/255, 115/255, 251/255, 1
             text: "Start"
             center_x: root.width * 0.5
             y: root.height * 0.55
@@ -29,12 +29,11 @@
             size_hint: None,None
             size: 300,100
             on_press: root.auto()
-            on_release: root.resetColors()
 
         # Turn on/off gate
         DPEAButton:
             id: gate
-            color: 0.180, 0.188, 0.980, 1
+            color: 251/255, 115/255, 251/255, 1
             text: "Open Gate"
             center_x: root.width * 0.25
             y: root.height * 0.35
@@ -43,11 +42,10 @@
             size_hint: None,None
             size: 300,100
             on_press: root.toggleGate()
-            on_release: root.resetColors()
 
         DPEAButton:
             id: ramp
-            color: 0.180, 0.188, 0.980, 1
+            color: 251/255, 115/255, 251/255, 1
             text: "Ramp to Top"
             center_x: root.width * 0.5
             y: root.height * 0.35
@@ -56,12 +54,11 @@
             size_hint: None,None
             size: 300,100
             on_press: root.toggleRamp()
-            on_release: root.resetColors()
 
         DPEAButton:
             id: staircase
-            color: 0.180, 0.188, 0.980, 1
-            text: "Staircase On"
+            color: 251/255, 115/255, 251/255, 1
+            text: "Staircase"
             center_x: root.width * 0.75
             y: root.height * 0.35
             background_color: 0, 0, 0, 0
@@ -69,7 +66,6 @@
             size_hint: None,None
             size: 300,100
             on_press: root.toggleStaircase()
-            on_release: root.resetColors()
 
 	##################
 	##### SLIDERS ####
@@ -112,7 +108,9 @@
             center_x: root.width * 0.5
             halign: 'center'
             y: root.height * 0.75
-            color: 0.9, 0.9, 0.9, 1
+            color: 214/255, 75/255, 230/255, 1
+            outline_width: self.font_size * 0.1
+            outline_color: 239/255, 166/255, 248/255, 1
 
         Label:
             id: rampSpeedLabel
@@ -120,7 +118,7 @@
             font_size: 40
             center_x: root.width * 0.22
             y: root.height * 0.15
-            color: 0.8, 0.8, 0.8, 1
+            color: 239/255, 166/255, 248/255, 1
 
         Label:
             id: staircaseSpeedLabel
@@ -128,7 +126,7 @@
             font_size: 40
             center_x: root.width * 0.20
             y: root.height * 0.05
-            color: 0.8, 0.8, 0.8, 1
+            color: 239/255, 166/255, 248/255, 1
 
         Label:
             id: armControlLabel
@@ -136,5 +134,5 @@
             font_size: 20
             center_x: root.width * 0.9
             y: root.height * 0.02
-            color: 0.8, 0.8, 0.8, 1
+            color: 239/255, 166/255, 248/255, 1
 
